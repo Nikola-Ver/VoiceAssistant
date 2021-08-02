@@ -13,6 +13,7 @@ for module in modules:
     exec(f'import {module}')
 
 def recognize_command(phrase, is_phrase):
+    print(phrase)
     if (is_phrase):
         for module in modules:
             exec(f'{module}.invoke("{phrase}")')
