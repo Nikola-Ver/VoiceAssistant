@@ -11,7 +11,7 @@ with sr.Microphone() as source:
             r.adjust_for_ambient_noise(source)
             r.energy_threshold = 300 
             audio = r.listen(source, phrase_time_limit=7)
-            phrase = r.recognize_google(audio)
+            phrase = r.recognize_google(audio).lower()
             is_listening_command = commands.recognize_command(phrase, is_listening_command)
         except: 
             pass
