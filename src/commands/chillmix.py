@@ -1,6 +1,6 @@
 import re, webbrowser
 
-CHILL_MIX_REG = r'chill mix'
+CHILL_MIX_REG = r'^chill mix$'
 
 def invoke(phrase):
     if (re.search(CHILL_MIX_REG, phrase)):

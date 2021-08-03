@@ -1,9 +1,9 @@
 import re, datetime, calendar, pyttsx3
 
-TIME_NOW_REG = r'(what time is it now)|(time)'
-HOURS_NOW_REG = r'(how many hours)|(hours)'
-MINUTES_NOW_REG = r'(how many minutes)|(minutes)'
-DATE_NOW_REG = r'(what date is it now)|(date)'
+TIME_NOW_REG = r'(what time is it now)|(^time$)'
+HOURS_NOW_REG = r'(how many hours)|(^hours$)'
+MINUTES_NOW_REG = r'(how many minutes)|(^minutes$)'
+DATE_NOW_REG = r'(what date is it now)|(^date$)'
 DAY_OF_WEEK_REG = r'(what )*day of( the)* week( now)*'
 
 engine = pyttsx3.init()
